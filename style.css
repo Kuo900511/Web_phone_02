@@ -1,28 +1,23 @@
 .banner {
-  position: fixed;
-  top: -10px; /* 設置廣告距離頂部的固定位置 */
-  left: 50%; 
-  transform: translate(-50%, 0); /* 水平與垂直方向置中 */
-  width: 90%; /* 寬度占螢幕的90% */
-  max-width: 393px; /* 最大寬度為300px */
-  background-color: #f04055;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  transform: translateY(-100%); /* 初始位置：上方不可見 */
-  transition: transform 0.8s ease-out; /* 平滑下滑動畫 */
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f04055;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transform: translateY(-100%);
+    transition: transform 0.8s ease-out;
+    z-index: 1000;
 }
+
 
 .banner.active {
   transform: translateY(0); /* 滑入到畫布頂部 */
 }
-
-
-
 
 
 
