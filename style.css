@@ -1,3 +1,4 @@
+/* 橫幅廣告樣式 */
 .banner {
   position: fixed;
   top: 0;
@@ -19,8 +20,6 @@
   transform: translateY(0); /* 滑入到畫布頂部 */
 }
 
-
-
 .banner p {
   margin: 0;
   font-size: 16px;
@@ -34,4 +33,9 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+}
+
+.close-btn:hover {
+  background-color: #d0354a;
+  color: white;
 }
