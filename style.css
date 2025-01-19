@@ -1,11 +1,10 @@
-/* 橫幅廣告樣式 */
 .banner {
   position: fixed;
-  top: -10;
-  left: 50%;
-  transform: translate(0%, -50%);
-  width: 100%; /* 容器寬度占營幕的 90% */
-  max-width: 300px; /* 最大寬度不超過 400px */
+  top: -10px; /* 設置廣告距離頂部的固定位置 */
+  left: 50%; 
+  transform: translate(-50%, 0); /* 水平與垂直方向置中 */
+  width: 90%; /* 寬度占螢幕的90% */
+  max-width: 353.5px; /* 最大寬度為300px */
   background-color: #f04055;
   color: white;
   display: flex;
@@ -22,6 +21,11 @@
   transform: translateY(0); /* 滑入到畫布頂部 */
 }
 
+
+
+
+
+
 .banner p {
   margin: 0;
   font-size: 16px;
@@ -35,9 +39,4 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
-}
-
-.close-btn:hover {
-  background-color: #d0354a;
-  color: white;
 }
