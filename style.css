@@ -1,0 +1,43 @@
+/* 橫幅廣告樣式 */
+.banner {
+  position: fixed;
+  top: -10;
+  left: 50%;
+  transform: translate(0%, -50%);
+  width: 100%; /* 容器寬度占營幕的 90% */
+  max-width: 300px; /* 最大寬度不超過 400px */
+  background-color: #f04055;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transform: translateY(-100%); /* 初始位置：上方不可見 */
+  transition: transform 0.8s ease-out; /* 平滑下滑動畫 */
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner.active {
+  transform: translateY(0); /* 滑入到畫布頂部 */
+}
+
+.banner p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.close-btn {
+  background-color: white;
+  color: #f04055;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.close-btn:hover {
+  background-color: #d0354a;
+  color: white;
+}
