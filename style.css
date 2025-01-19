@@ -4,7 +4,7 @@
   left: 50%; 
   transform: translate(-50%, 0); /* 水平與垂直方向置中 */
   width: 90%; /* 寬度占螢幕的90% */
-  max-width: 353.5px; /* 最大寬度為300px */
+  max-width: 393px; /* 最大寬度為300px */
   background-color: #f04055;
   color: white;
   display: flex;
